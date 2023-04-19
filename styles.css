@@ -1,0 +1,148 @@
+/*Anna Michelle Sanders; CSCE 102-014; 4/17/23*/
+header{
+	padding:5px;
+    background:#60755D;
+	text-align:center;
+	color:white;
+}	
+
+header:hover {
+	color:#033B3D
+}
+
+header, nav, main, footer{
+	opacity:.80;
+}
+
+body{
+	background:url(images/background.jpg);
+}	
+#content{
+	width:100%;
+	margin:auto;	
+	padding:5px;
+	border-radius:5px;
+}	
+#main-nav ul{
+	list-style-type:none;
+	text-align:center;
+}
+#main-nav li{
+	display:inline;
+}	
+#main-nav a{
+	text-decoration:none;
+	background:#F2D98D;
+	color:black;
+	padding:5px;
+	border-radius:3px;
+	border-bottom-style:solid;
+	display:block;
+}	
+
+#main-nav a:hover {
+	background:#E3C75F;
+}
+
+main{
+	padding:5px;
+	background:#535145;
+}	
+footer{
+	padding:5px;
+	background:#4C423B;
+	text-align:center;
+	color:white;
+}
+nav{
+	padding:5px;
+	background:#596250;
+}		
+
+.col-container{
+	display:flex;
+	padding:5px;
+	background:#535145;
+	color:white;
+	display:grid;
+	grid-gap:10px;
+}	
+
+/*Contact Form*/
+.col-contact{
+	display:flex;
+	padding:5px;
+	background:#535145;
+	color:white;
+	display:grid;
+	grid-gap:10px;
+	margin:0;
+}	
+
+.col-contact p{
+	line-height:1.5;
+	margin:0;
+}
+
+.col-contact h2,h3 {
+	margin:0;
+}
+
+.col-form {
+	color:#F2D98D;
+	line-height:1.5;
+	display:flex;
+	padding:2px;
+	border-radius:5px;
+	background-color:#66583E;
+	padding: 18px;
+	margin-right:auto;
+}
+
+.center {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%
+}
+
+.hidden {
+	display:none;
+}
+
+.hiddenimg {
+    display:none;
+}
+
+/*Larger Resolution*/
+@media(min-width:720px){
+	#content{
+		width:80%;
+		margin:auto;
+	}	
+	body{
+		background:url(images/large.jpg);
+	}	
+	#main-nav li, #main-nav a{
+		display:inline;
+	}	
+	#main-nav{
+		text-align:center;
+	}	
+	#main-nav a{
+		text-align:center;
+		border:none;
+		color:black;
+		background:#F2D98D;
+	}	
+	.col-container{
+		display:grid;
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+	}
+	.col-contact{
+		display:grid;
+		grid-template-columns:auto;
+		grid-template-rows:auto;
+	}
+}

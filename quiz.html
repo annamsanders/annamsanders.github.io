@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>CSCE 102 Project Part5</title>
+	<!--Anna Michelle Sanders; CSCE 102-014; 4/17/23-->
+</head>
+<body>
+	<div id="content">
+		<header>
+			<h1>&#9829; Anna Michelle Sanders &#9829;</h1>
+		</header>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<div class="main">
+		<div class="col-container">
+            <section>
+                <h2>Website Development Quiz</h2>
+                <p>
+                    <label for="txt-q1">Which tag is used to create a hyperlink?</label>
+                    <select id="txt-q1">
+                        <option>a</option>
+                        <option>img</option>
+                        <option>i</option>
+                        <option>br</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="txt-q2">What is the HTML attribute used to reference the location of an image inside the &lt;img&gt; tag?</label>
+                    <select id="txt-q2">
+                        <option>href</option>
+                        <option>location</option>
+                        <option>link</option>
+                        <option>src</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="txt-q3">Which of the following table tags is used to create a table header cell?</label>
+                    <select id="txt-q3">
+                        <option>th</option>
+                        <option>tr</option>
+                        <option>table</option>
+                        <option>td</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="txt-q4">Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?</label>
+                    <select id="txt-q4">
+                        <option>src</option>
+                        <option>alt</option>
+                        <option>title</option>
+                        <option>description</option>
+                    </select>
+                </p>
+            <button id="btn-submit" onclick="showResults()">Submit</button>
+            </section>
+            <section id="result" class="design hidden">
+            </section>
+		<footer>
+			<p>&copy;Sanders</p>
+		</footer>
+	</div>
+	</div>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
